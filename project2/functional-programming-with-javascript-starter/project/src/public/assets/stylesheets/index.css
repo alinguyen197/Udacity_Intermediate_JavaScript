@@ -1,0 +1,109 @@
+/* -------------------  MOBILE  --------------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  min-height: 100vh;
+}
+
+header {
+  /* header styles */
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
+  /* footer styles */
+}
+
+
+/* Tab menu */
+.rover-tabs{
+  display: flex;
+  justify-content:center;
+}
+.rover-tabs .tab.active{
+  color: white;
+  background-color: blue;
+}
+.rover-tabs .tab{
+  padding: 5px;
+  width: 33.3%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.rover-content-item{
+  display: none;
+  
+}
+.rover-content-item.active{
+  display: block;
+}
+
+.rover-content-item .item-inner{
+  width: 100%;
+  /* overflow-x: scroll; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 20px;
+  height: 700px;
+  overflow: auto;
+}
+
+.card{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  height: 500px;
+}
+
+.card .card-body{
+  padding: 0px 10px 10px 10px;
+}
+
+/* -------------------  TABLET  --------------------- */
+@media (min-width: 768px) {
+  /* use mobile */
+  .card{
+    width: 29%;
+  }
+  .card .card-carousel-img img{
+    width: 100%;
+    height: 250px;
+  }
+}
+
+/* -------------------  DESKTOP  -------------------- */
+
+@media (min-width: 1224px) {
+  /* use mobile */
+  .card{
+    width: 24%;
+  }
+  .card .card-carousel-img img{
+    width: 100%;
+    height: 300px;
+  }
+}
+
+/* -------------------  LARGE SCREENS  -------------- */
+
+@media (min-width: 1824px) {
+  /* use mobile */
+  .card{
+    width: 19%;
+  }
+  .card .card-carousel-img img{
+    width: 100%;
+    height: 300px;
+  }
+}
